@@ -5,12 +5,15 @@
 class FireWorkShow
 {
 public:
-    void update(float delta);
+    void setShowSize(int width, int height);
+    void setShowModeFullScreen();
     void render(sf::RenderWindow& window);
+    void update(float delta);
     void runApp();
-    void setWidthHeight(int width, int height);
+    void newFireWork(int posX, int posY);
 
 private:
+    bool fullScreen{false};
     int windowWidth{800};
     int windowHeight{600};
     std::vector<FireWork> fireworks;
