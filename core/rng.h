@@ -1,7 +1,6 @@
 #pragma once
 
 #include <random>
-#include <SFML/Graphics/Color.hpp>
 
 static float randomVal()
 {

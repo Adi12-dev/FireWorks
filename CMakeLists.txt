@@ -14,14 +14,14 @@ include_directories("${CMAKE_SOURCE_DIR}")
 
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
 
-# Add your source files
+# source files
 add_executable(FireWorksShow
     core/firework.cpp
     core/fireworkshow.cpp
     src/main.cpp
 )
 
-# Link SFML libraries here
+# Link SFML libraries
 target_link_libraries(FireWorksShow
     sfml-graphics
     sfml-window

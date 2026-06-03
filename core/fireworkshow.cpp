@@ -24,6 +24,7 @@ void FireWorkShow::setShowModeFullScreen()
     sf::VideoMode desktop = sf::VideoMode::getDesktopMode();
     windowWidth = desktop.width;
     windowHeight = desktop.height;
+    fullScreen = true;
 }
 
 void FireWorkShow::render(sf::RenderWindow& window)
